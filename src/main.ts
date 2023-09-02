@@ -133,7 +133,7 @@ async function getAIResponse(prompt: string): Promise<Array<{
   reviewComment: string;
 }> | null> {
   const queryConfig = {
-    model: OPENAI_API_MODEL,
+    model: "gpt-3.5-turbo",
     temperature: 0.2,
     max_tokens: 700,
     top_p: 1,
